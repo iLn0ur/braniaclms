@@ -34,6 +34,7 @@ class NewsView(TemplateView):
         # Create your own data
         context["news_title"] = "Громкий новостной заголовок"
         context["news_preview"] = "Предварительное описание, которое заинтересует каждого"
+        context["range"] = range(5)
         return context
 
 
