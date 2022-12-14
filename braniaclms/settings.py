@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    "markdownify.apps.MarkdownifyConfig",  # pip install django-markdownify
     'mainapp',
 ]
 
