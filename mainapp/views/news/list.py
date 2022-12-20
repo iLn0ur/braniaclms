@@ -1,15 +1,13 @@
-__all__ = ['NewsView']
-from django.views.generic import TemplateView
+__all__ = ['NewsListView']
+from django.views.generic import ListView
 
 from mainapp.models import News
 
 
-class NewsView(TemplateView):
-    template_name = "mainapp/news/news.html"
+class NewsListView(ListView):
+    model = News
+    paginate_by = 5
+    template_name = "mainapp/news/news_list.html"
 
-    def get_context_data(self, **kwargs):
-        # Get all previous data
-        context = super().get_context_data(**kwargs)
-        # Create your own data
-        context["news_qs"] = News.objects.all()[:5]
-        return context
+    def get_queryset(self):
+        return super().get_queryset().filter(deleted=False)

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "django_extensions",  # pip install django-extensions
     "markdownify.apps.MarkdownifyConfig",  # pip install django-markdownify
+    "crispy_forms", # pip install django-crispy-forms
     'mainapp',
     "authapp",
 ]
@@ -145,3 +146,5 @@ MEDIA_ROOT = BASE_DIR / "media"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"  # https://django-crispy-forms.readthedocs.io/en/latest/install.html#template-packs
