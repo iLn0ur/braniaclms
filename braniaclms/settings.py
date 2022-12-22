@@ -25,10 +25,10 @@ SECRET_KEY = 'django-insecure-r#e*$j3zbr_!(nkk($qs04jk!un6+^#we1u0p+lt6e^ka##j$n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '*'
-]
+ALLOWED_HOSTS = ['*']
 
+if DEBUG:
+    INTERNAL_IPS = ['127.0.0.1',]
 
 # Application definition
 
@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "django_extensions",  # pip install django-extensions
     "markdownify.apps.MarkdownifyConfig",  # pip install django-markdownify
-    "crispy_forms", # pip install django-crispy-forms
+    "crispy_forms",  # pip install django-crispy-forms
+    "debug_toolbar",
     'mainapp',
     "authapp",
 ]
@@ -55,6 +56,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+if DEBUG:
+    MIDDLEWARE.append(
+        "debug_toolbar.middleware.DebugToolbarMiddleware"
+    )
 
 ROOT_URLCONF = 'braniaclms.urls'
 
@@ -148,3 +153,41 @@ MEDIA_ROOT = BASE_DIR / "media"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"  # https://django-crispy-forms.readthedocs.io/en/latest/install.html#template-packs
+
+LOG_FILE = BASE_DIR / "var" / "log" / "main_log.log"
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "console": {
+            "format": "[%(asctime)s] %(levelname)s %(name)s (%(lineno)d) %(message)s"
+        },
+    },
+    "handlers": {
+        "file": {
+            "level": "DEBUG",
+            "class": "logging.FileHandler",
+            "filename": LOG_FILE,
+            "formatter": "console",
+        },
+        "console": {"class": "logging.StreamHandler", "formatter": "console"},
+    },
+    "loggers": {
+        "django": {"level": "INFO", "handlers": ["console", "file"]},
+        "mainapp": {
+            "level": "DEBUG",
+            "handlers": ["file"],
+        },
+    },
+}
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        },
+    }
+}
