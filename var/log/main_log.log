@@ -1,0 +1,393 @@
+[2022-12-20 18:17:55,339] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2022-12-20 18:17:55,360] DEBUG mainapp.views.courses.detail (16) debug informer
+[2022-12-20 18:31:22,398] INFO django.utils.autoreload (266) /home/i/PycharmProjects/braniaclms/mainapp/views/__init__.py changed, reloading.
+[2022-12-20 18:31:22,684] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2022-12-20 18:31:22,710] DEBUG mainapp.views.courses.detail (16) debug informer
+[2022-12-20 18:31:40,588] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2022-12-20 18:31:40,610] DEBUG mainapp.views.courses.detail (16) debug informer
+[2022-12-20 18:38:21,213] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2022-12-20 18:38:21,234] DEBUG mainapp.views.courses.detail (16) debug informer
+[2022-12-20 18:38:24,565] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2022-12-20 18:38:24,623] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 9819
+[2022-12-20 18:38:24,690] INFO django.server (187) "GET /static/css/Chart.min.css HTTP/1.1" 200 521
+[2022-12-20 18:38:24,690] INFO django.server (187) "GET /static/js/popper.min.js HTTP/1.1" 200 21233
+[2022-12-20 18:38:24,694] INFO django.server (187) "GET /static/css/bootstrap.min.css HTTP/1.1" 200 167943
+[2022-12-20 18:38:24,695] INFO django.server (187) "GET /static/css/fontawesome.all.min.css HTTP/1.1" 200 59344
+[2022-12-20 18:38:24,695] INFO django.server (187) "GET /static/js/jquery-3.6.0.min.js HTTP/1.1" 200 89501
+[2022-12-20 18:38:24,704] INFO django.server (187) "GET /static/js/bootstrap.min.js HTTP/1.1" 200 63467
+[2022-12-20 18:38:24,707] INFO django.server (187) "GET /static/js/Chart.min.js HTTP/1.1" 200 173077
+[2022-12-20 18:38:24,723] INFO django.server (187) "GET /static/img/logo.png HTTP/1.1" 200 4016
+[2022-12-20 18:38:24,727] INFO django.server (187) "GET /static/js/fontawesome.all.min.js HTTP/1.1" 200 1195450
+[2022-12-20 18:38:24,729] INFO django.server (187) "GET /static/img/slider001.jpg HTTP/1.1" 200 183079
+[2022-12-20 18:38:24,734] INFO django.server (187) "GET /static/img/slider002.jpg HTTP/1.1" 200 3087732
+[2022-12-20 18:38:24,750] INFO django.server (187) "GET /static/img/slider003.jpg HTTP/1.1" 200 2863995
+[2022-12-20 18:38:24,757] INFO django.server (187) "GET /static/img/user001.png HTTP/1.1" 200 24384
+[2022-12-20 18:38:24,775] INFO django.server (187) "GET /static/img/user002.png HTTP/1.1" 200 20918
+[2022-12-20 18:38:24,792] INFO django.server (187) "GET /static/img/user003.png HTTP/1.1" 200 23170
+[2022-12-20 18:38:24,793] INFO django.server (187) "GET /static/img/promo001.jpg HTTP/1.1" 200 69037
+[2022-12-20 18:38:24,794] INFO django.server (187) "GET /static/img/promo002.jpg HTTP/1.1" 200 54342
+[2022-12-20 18:38:24,798] INFO django.server (187) "GET /static/img/promo003.jpg HTTP/1.1" 200 69825
+[2022-12-20 18:38:24,962] INFO django.server (187) "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78196
+[2022-12-20 18:38:24,962] INFO django.server (187) "GET /static/webfonts/fa-brands-400.woff2 HTTP/1.1" 200 76764
+[2022-12-20 18:38:25,083] WARNING django.request (241) Not Found: /favicon.ico
+[2022-12-20 18:38:25,083] WARNING django.server (187) "GET /favicon.ico HTTP/1.1" 404 2554
+[2022-12-20 18:38:30,639] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2022-12-20 18:38:30,698] ERROR django.request (241) Internal Server Error: /mainapp/
+Traceback (most recent call last):
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 208, in render
+    return template.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'log_view' not found. 'log_view' is not a valid view function or pattern name.
+[2022-12-20 18:38:30,699] ERROR django.server (187) "GET /mainapp/ HTTP/1.1" 500 200100
+[2022-12-22 13:34:23,676] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2022-12-22 13:34:23,701] DEBUG mainapp.views.courses.detail (16) debug informer
+[2022-12-22 13:34:28,008] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2022-12-22 13:34:28,095] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 9819
+[2022-12-22 13:34:28,860] WARNING django.request (241) Not Found: /favicon.ico
+[2022-12-22 13:34:28,862] WARNING django.server (187) "GET /favicon.ico HTTP/1.1" 404 2554
+[2022-12-22 13:34:57,658] INFO django.server (187) "GET /authapp/login/ HTTP/1.1" 200 3484
+[2022-12-22 13:35:07,223] INFO django.server (187) "POST /authapp/login/ HTTP/1.1" 302 0
+[2022-12-22 13:35:07,270] ERROR django.request (241) Internal Server Error: /mainapp/
+Traceback (most recent call last):
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 208, in render
+    return template.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'log_view' not found. 'log_view' is not a valid view function or pattern name.
+[2022-12-22 13:35:07,271] ERROR django.server (187) "GET /mainapp/ HTTP/1.1" 500 200265
+[2022-12-22 13:39:31,968] ERROR django.request (241) Internal Server Error: /mainapp/
+Traceback (most recent call last):
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'main_app'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 208, in render
+    return template.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'main_app' is not a registered namespace
+[2022-12-22 13:39:31,969] ERROR django.server (187) "GET /mainapp/ HTTP/1.1" 500 201661
+[2022-12-22 13:39:43,447] ERROR django.request (241) Internal Server Error: /mainapp/
+Traceback (most recent call last):
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'main_app'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 208, in render
+    return template.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/i/PycharmProjects/braniaclms/venv/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'main_app' is not a registered namespace
+[2022-12-22 13:39:43,447] ERROR django.server (187) "GET /mainapp/ HTTP/1.1" 500 201661
+[2022-12-22 13:39:45,370] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 10905
+[2022-12-22 13:39:48,785] INFO django.server (187) "GET /mainapp/log_view/ HTTP/1.1" 200 36905
+[2022-12-22 13:39:58,490] INFO django.server (187) "GET /mainapp/log_download/ HTTP/1.1" 200 29016
+[2022-12-22 13:41:57,568] INFO django.utils.autoreload (266) /home/i/PycharmProjects/braniaclms/braniaclms/settings.py changed, reloading.
+[2022-12-22 13:41:57,868] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2022-12-22 13:41:57,897] DEBUG mainapp.views.courses.detail (16) debug informer
+[2022-12-22 13:42:38,955] INFO django.utils.autoreload (266) /home/i/PycharmProjects/braniaclms/braniaclms/settings.py changed, reloading.
+[2022-12-22 13:42:39,260] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2022-12-22 13:42:39,283] DEBUG mainapp.views.courses.detail (16) debug informer
+[2022-12-22 13:42:53,623] INFO django.utils.autoreload (266) /home/i/PycharmProjects/braniaclms/braniaclms/settings.py changed, reloading.
+[2022-12-22 13:42:53,924] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2022-12-22 13:42:53,947] DEBUG mainapp.views.courses.detail (16) debug informer
+[2022-12-22 13:43:41,203] INFO django.utils.autoreload (266) /home/i/PycharmProjects/braniaclms/braniaclms/settings.py changed, reloading.
+[2022-12-22 13:43:41,558] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2022-12-22 13:43:41,570] DEBUG mainapp.views.courses.detail (16) debug informer
+[2022-12-22 13:44:16,459] INFO django.utils.autoreload (266) /home/i/PycharmProjects/braniaclms/braniaclms/settings.py changed, reloading.
+[2022-12-22 13:49:02,037] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2022-12-22 13:49:02,052] DEBUG mainapp.views.courses.detail (16) debug informer
+[2022-12-22 13:49:04,016] INFO django.server (187) "GET /mainapp/log_view/ HTTP/1.1" 200 49686
+[2022-12-22 13:49:04,040] INFO django.server (187) "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+[2022-12-22 13:49:04,043] INFO django.server (187) "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12378
+[2022-12-22 13:49:04,134] INFO django.server (187) "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+[2022-12-22 13:49:04,157] INFO django.server (187) "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+[2022-12-22 13:49:13,498] INFO django.utils.autoreload (266) /home/i/PycharmProjects/braniaclms/braniaclms/urls.py changed, reloading.
+[2022-12-22 13:49:13,853] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2022-12-22 13:49:13,865] DEBUG mainapp.views.courses.detail (16) debug informer
+[2022-12-22 13:49:46,223] INFO django.server (187) "GET /__debug__/render_panel/?store_id=deaa20a89b9e43bb9a2438c3637cdd10&panel_id=RequestPanel HTTP/1.1" 200 531
+[2022-12-22 13:49:50,797] WARNING django.request (241) Not Found: /mainapp/log_view/news
+[2022-12-22 13:49:50,797] WARNING django.server (187) "GET /mainapp/log_view/news HTTP/1.1" 404 16123
+[2022-12-22 13:49:55,044] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2022-12-22 13:49:55,125] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 21841
+[2022-12-22 13:49:56,084] INFO django.server (187) "GET /mainapp/news HTTP/1.1" 301 0
+[2022-12-22 13:49:56,121] INFO django.server (187) "GET /mainapp/news/ HTTP/1.1" 200 22928
+[2022-12-22 13:49:57,536] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2022-12-22 13:49:57,557] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 21841
+[2022-12-22 13:49:58,385] INFO django.server (187) "GET /mainapp/courses HTTP/1.1" 301 0
+[2022-12-22 13:49:58,415] INFO django.server (187) "GET /mainapp/courses/ HTTP/1.1" 200 18958
+[2022-12-22 13:49:58,482] INFO django.server (187) "GET /static/img/course002.jpg HTTP/1.1" 200 191482
+[2022-12-22 13:49:58,492] INFO django.server (187) "GET /static/img/course004.jpg HTTP/1.1" 200 89109
+[2022-12-22 13:49:58,493] INFO django.server (187) "GET /static/img/course001.jpg HTTP/1.1" 200 166562
+[2022-12-22 13:49:58,493] INFO django.server (187) "GET /static/img/course007.jpg HTTP/1.1" 200 112359
+[2022-12-22 13:49:58,494] INFO django.server (187) "GET /static/img/course003.jpg HTTP/1.1" 200 203887
+[2022-12-22 13:49:58,495] INFO django.server (187) "GET /static/img/course006.jpg HTTP/1.1" 200 105671
+[2022-12-22 13:49:58,496] INFO django.server (187) "GET /static/img/course005.jpg HTTP/1.1" 200 250218
+[2022-12-22 13:50:02,466] INFO django.server (187) "GET /__debug__/render_panel/?store_id=e6b2116b2a094ee8b404b706dc29816d&panel_id=SQLPanel HTTP/1.1" 200 45213
+[2022-12-22 13:50:06,022] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 21841
+[2022-12-22 13:50:07,222] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 21841
+[2022-12-22 13:50:08,108] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 21841
+[2022-12-22 13:50:12,417] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2022-12-22 13:50:12,443] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 21841
+[2022-12-22 13:50:14,296] INFO django.server (187) "GET /mainapp/contacts HTTP/1.1" 301 0
+[2022-12-22 13:50:14,317] INFO django.server (187) "GET /mainapp/contacts/ HTTP/1.1" 200 21906
+[2022-12-22 13:50:19,051] INFO django.server (187) "GET /mainapp/contacts/ HTTP/1.1" 200 21906
+[2022-12-22 13:50:38,292] INFO django.server (187) "GET /__debug__/render_panel/?store_id=f78982812423454e8d8e97c6e10fc732&panel_id=SQLPanel HTTP/1.1" 200 26771
+[2022-12-22 13:50:46,275] INFO django.server (187) "GET / HTTP/1.1" 302 0
+[2022-12-22 13:50:46,297] INFO django.server (187) "GET /mainapp/ HTTP/1.1" 200 21841
+[2022-12-22 13:50:47,435] INFO django.server (187) "GET /mainapp/courses/ HTTP/1.1" 200 18958
+[2022-12-22 13:50:50,071] INFO django.server (187) "GET /mainapp/courses/2/ HTTP/1.1" 200 25762
+[2022-12-22 13:50:50,083] WARNING django.server (187) "GET /static/img/no_image.svg HTTP/1.1" 404 1805
+[2022-12-22 13:50:54,729] INFO django.server (187) "GET /mainapp/courses/2/ HTTP/1.1" 200 25762
+[2022-12-22 13:50:54,744] WARNING django.server (187) "GET /static/img/no_image.svg HTTP/1.1" 404 1805
+[2022-12-22 13:50:55,614] INFO django.server (187) "GET /mainapp/courses/2/ HTTP/1.1" 200 25762
+[2022-12-22 13:50:55,628] WARNING django.server (187) "GET /static/img/no_image.svg HTTP/1.1" 404 1805
+[2022-12-22 13:50:56,415] INFO django.server (187) "GET /mainapp/courses/2/ HTTP/1.1" 200 25762
+[2022-12-22 13:50:56,427] WARNING django.server (187) "GET /static/img/no_image.svg HTTP/1.1" 404 1805
+[2022-12-22 13:50:57,375] INFO django.server (187) "GET /__debug__/render_panel/?store_id=4e7bc1c6780f443b8d8db5d6a0e62072&panel_id=SQLPanel HTTP/1.1" 200 299328
+[2022-12-22 13:51:23,182] INFO django.utils.autoreload (266) /home/i/PycharmProjects/braniaclms/braniaclms/urls.py changed, reloading.
+[2022-12-22 13:51:23,601] INFO django.utils.autoreload (677) Watching for file changes with StatReloader
+[2022-12-22 13:51:23,616] DEBUG mainapp.views.courses.detail (16) debug informer
