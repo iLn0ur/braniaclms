@@ -6,7 +6,7 @@ from django.views.generic import TemplateView
 # Create your views here.
 
 class ContactView(TemplateView):
-    template_name = 'mainapp/contact.html'
+    template_name = 'mainapp/contacts.html'
 
 
 class CoursesListView(TemplateView):
@@ -28,7 +28,21 @@ class LoginView(TemplateView):
 class NewsView(TemplateView):
     template_name = 'mainapp/news.html'
 
+    def get_context_data(self, **kwargs):
+        # Get all previous data
+        context = super().get_context_data(**kwargs)
+        # Create your own data
+        context["news_title"] = "Громкий новостной заголовок"
+        context["news_preview"] = "Предварительное описание, которое заинтересует каждого"
+        context["range"] = range(5)
+        return context
 
+
+class NewsWithPaginatorView(NewsView):
+    def get_context_data(self, page, **kwargs):
+        context = super().get_context_data(page=page, **kwargs)
+        context["page_num"] = page
+        return context
 
 
 
